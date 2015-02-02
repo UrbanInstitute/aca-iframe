@@ -54,8 +54,19 @@
     	border-bottom-width:1px;
     	
     	}
-    
-    
+
+#mobile-title{
+	display: none;
+}
+/*responsive header img*/
+@media screen and (max-width: 690px) {
+    #header-image {
+        content:url("small.jpg")
+    }
+    #mobile-title{
+    	display:block;
+    }
+}
         
     
        
@@ -157,7 +168,10 @@ return true;
 
 </script>
 
-       <img src="ACATitle.jpeg"	>
+<img id = "header-image" src="ACATitle.jpeg">
+<h1 id = "mobile-title">
+	How big is the ACA Tax Penalty?
+</h1>
 
 <table id = "header-table">
 <tr>
