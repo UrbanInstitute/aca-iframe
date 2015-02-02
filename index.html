@@ -1,0 +1,916 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head><title>
+	ACA Penalty Calculator 2013
+</title><link href="Site.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .textOutputBoxes
+        {}
+        .style1
+    {
+        width:20%;
+        
+    }
+    .inputcell
+    {
+    	width:20%;
+    	text-align:right;
+    	
+    }
+    .inputbox
+    {
+    	width:20%;
+    	text-align:right;
+    }
+    .inflatebox
+    {
+    	width:20%;
+    	text-align:right;
+    }
+    .textbox
+    {
+    	text-align:left;
+    	color:Red;
+    }
+    #header-table{
+    	width:90%;
+    }
+    .responsive-table{
+    	width: 80%;
+    }
+        
+    
+    
+        .style3
+        {
+            width: 100%;
+            padding-bottom: 5px;
+        }
+        .yearcell
+        {
+        	width:20%;
+    	text-align:right;
+    	border-bottom-style:dotted;
+    	border-bottom-width:1px;
+    	
+    	}
+    
+    
+        
+    
+       
+    
+    
+       
+    
+    
+       
+    
+    
+        </style>
+
+
+
+ 
+   </head>
+<body>
+    <form method="post" action="" onsubmit="javascript:return WebForm_OnSubmit();" id="ctl01">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTk0MjMxODM0MA9kFgJmD2QWAgIDD2QWAgIBD2QWEAIcDw8WBh4IQ3NzQ2xhc3MFCGlucHV0Ym94HgdFbmFibGVkaB4EXyFTQgICZGQCHw8PFgYfAAUIaW5wdXRib3gfAWgfAgICZGQCJQ8PFgYfAAUIaW5wdXRib3gfAWgfAgICZGQCKA8PFgYfAAUIaW5wdXRib3gfAWgfAgICZGQCLg8PFgYfAAUIaW5wdXRib3gfAWgfAgICZGQCMQ8PFgYfAAUIaW5wdXRib3gfAWgfAgICZGQCNw8PFgYfAAUIaW5wdXRib3gfAWgfAgICZGQCOg8PFgYfAAUIaW5wdXRib3gfAWgfAgICZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFGWN0bDAwJE1haW5Db250ZW50JEluZmxhdGVvn8HpgpOId0oNFAYDWL53aej3DRIdxOfy8TNnUpL05g==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['ctl01'];
+if (!theForm) {
+    theForm = document.ctl01;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/ACACalculator/WebResource.axd?d=rcZ3UtHa_bfSCIlYjyecRPmKHZOD_CH-lceXcOaffivmsOOz_UyVQrjKkefIS5fZnIy6a7Icn9X5NygsfHai_UkohDjjdtvsdBYnM5dbrUo1&amp;t=635418424260000000" type="text/javascript"></script>
+
+
+<script src="/ACACalculator/WebResource.axd?d=QsQFTAfyO1hEP_SnynRViMx_a_BU-eop4idEJI88SbjZNvxyFA-k87Y3NK-fNYt4MUApA9E2kR-ZiEIOQjCnL1EJc9vlS1FyNnViU5rKRMk1&amp;t=635418424260000000" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="EA14522B" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdADmAIzwWxht2lcywy8gSRJQVacKLlV1SMKkLnFfmPr7t/q+KcjFs605KWGYXXyJRVeNstvVYFx67ixWkAhVJIWBNK7FSt1t6e3mEn7KOgUtsYf2bZLjO+yZ/AkTNHp4qI5KiOF+BkXeZuqDv0xXc9EYPoCLXl374ummtDB7M4TBMaGrDxN5qbChuks9v52O5FfDkcUk7TDMAY92JqxfRPdihLQ1yGdsl/FV3XD7KsdXTbd4WTgoahEIUy+tda1hq8S8kLlr2j8JVHkazyAHkG3wOUlG0GB0UnbaZvpjNgzAdQbfXlYrU5vyLg82dzaKrh6MQqBHxa6MHiWYVIcXLYdkF+d190eSY+YD+skasUpaSJq6lt9S+pMp1jwucylCVEgVj1a2AsHX/BOi/LlkNHVpTtgAAl2IAs2CBGEaUTPRiHKnBDmALn9tFIdulTGzz03/f/PkqBoFagPYV5W9lv2V41SDT7Oxt8kcWjRMNjccck94kaUJJXTERs4v76aLrtuyLLMtJVtJf42cfr5NYCbFQZBC4u8hjh1BipISYjzWMG13oZ5q6FJhqpnp7kToEqi6E37wCfSmlVWypMyDQ0r5gaaG+GiHCZ+qOXjsaNMDBxL0CDLyOuxhayB5Md0wxzXH2aI8DlL3K4AJqVo5v8HaxJ2oCfOs3YISEUFJqn3BoO8YXipubzJNxQEQNW1h/8a7mg869b3uxr0mQKIGmfvNfvvn+Fj4yr+xZusc6/v6TpsSu8IY5fxltOT2Zrgxj26gCcirvbECjxTTrLNy+sycCwRJYOx81kBfUBBL1Tq6Fh31Ae9PEvZ8PUwK96BI1q3NAcN87Rm1qJH4umZbJUhoo0ja+Yopu5jfGDOJbLGRD+fK6+CT8x1memLhhIe2dR6av1KYnagDMulCDGzcxEs8YkmctueLk0jTO68NvpAJOjUC3V0rS8Gwp7LhKhZueUUG+QIFY6fcGeJrsraF2qI4ayRdgiITwWntKSOyKh6mXG9xv8zaomoCwLM9YKciQejXXynpBvlDEDMKmjDOPY70uFQxa34uoA7XkHGb29Siex3VnSJ/FaH2thPmOw68KMn5+N9mzOj81EYkuQpSl9GlfVqoCEu0Q1d6b+SAyfT6b4HtL0B2PAlAT3mE1DDMr6ZsM0cpVF0f21zlSChYzx4PTc5OPAYc7YMNV5dmfVU/w/NJxvZd4vSGbnIrQKqnn/qVTJvWSmDoVTHUEa8vfXHbxfrFnbRkKx5Ku+Umxv1aNbg==" />
+</div>
+    <div class="page">
+    
+        <div class="main">
+            
+
+<script type="text/javascript">
+    // This function is called at checkbox change.
+    function MakeFutureReadOnly() {
+        var chk = document.getElementById('MainContent_Inflate').checked;
+        if (chk) {
+            document.getElementById('MainContent_AGI1').disabled = true;
+            document.getElementById('MainContent_AGI2').disabled = true;
+            document.getElementById('MainContent_TXEXINT1').disabled = true;
+            document.getElementById('MainContent_TXEXINT2').disabled = true;
+            document.getElementById('MainContent_EARNABR1').disabled = true;
+            document.getElementById('MainContent_EARNABR2').disabled = true;
+            document.getElementById('MainContent_DEPMAGI1').disabled = true;
+            document.getElementById('MainContent_DEPMAGI2').disabled = true;
+
+        }
+        // if not checked, be sure to set readonly to false.
+        else {
+            document.getElementById('MainContent_AGI1').disabled = false;
+            document.getElementById('MainContent_AGI2').disabled = false;
+            document.getElementById('MainContent_TXEXINT1').disabled = false;
+            document.getElementById('MainContent_TXEXINT2').disabled = false;
+            document.getElementById('MainContent_EARNABR1').disabled = false;
+            document.getElementById('MainContent_EARNABR2').disabled = false;
+            document.getElementById('MainContent_DEPMAGI1').disabled = false;
+            document.getElementById('MainContent_DEPMAGI2').disabled = false;
+
+
+        }
+    }
+
+</script>
+
+       <img src="/images/ACATitle.gif" style="height: 96px; width: 635px">
+
+<table id = "header-table">
+<tr>
+	<td >
+		<p style="color: #445870">
+			The Affordable Care Act (ACA) requires most Americans to have health insurance <a href="Startingin2014.htm"  onclick="window.open(this.href,'_blank','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=300');return false;">starting in 2014.</a> People who don’t comply have to pay a penalty, the amount of which depends on several factors, including income and family size. This calculator lets you estimate the potential ACA penalty for individuals and 
+married couples who don’t have health insurance coverage required by the ACA.
+
+		</p>
+		<p style="color: #445870">
+			Certain groups are exempt from the penalty tax (<a href="GroupsExempt.htm" onclick="window.open(this.href,'_blank','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=300');return false;">click for list</a>).
+		</p >
+		
+            <p style="color: #445870">To see what the penalties are, just enter the requested information and click "Calculate."</p>
+	</td>
+</tr>
+</table>
+
+<table>
+<tr>
+	<td  colspan="2">
+		<a name="Input" /><h2>Input</h2>
+	</td>
+</tr>
+<tr><td colspan="2"><h3>Filing status, age, and blindness</h3></td></tr>
+<tr>
+	<td class="style1">
+		 What is your tax filing status?
+	</td>
+	<td colspan="3">
+		<table id="MainContent_RadioFS" display="inline">
+	<tr>
+		<td><input id="MainContent_RadioFS_0" type="radio" name="ctl00$MainContent$RadioFS" value="Single" checked="checked" /><label for="MainContent_RadioFS_0">Single</label></td><td><input id="MainContent_RadioFS_3" type="radio" name="ctl00$MainContent$RadioFS" value="Head of household" /><label for="MainContent_RadioFS_3">Head of household</label></td>
+	</tr><tr>
+		<td><input id="MainContent_RadioFS_1" type="radio" name="ctl00$MainContent$RadioFS" value="Married filing jointly" /><label for="MainContent_RadioFS_1">Married filing jointly</label></td><td><input id="MainContent_RadioFS_4" type="radio" name="ctl00$MainContent$RadioFS" value="Married filing separately" /><label for="MainContent_RadioFS_4">Married filing separately</label></td>
+	</tr><tr>
+		<td><input id="MainContent_RadioFS_2" type="radio" name="ctl00$MainContent$RadioFS" value="Not required to file a federal income tax return" /><label for="MainContent_RadioFS_2">Not required to file a federal income tax return</label></td><td></td>
+	</tr>
+</table>
+	</td>
+</tr>
+
+<tr>
+	<td class="style1">
+		 Is taxpayer:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Age 65 or over?
+	</td>
+	<td >
+		<table id="MainContent_RadioAge65" cellpadding="2" display="inline">
+	<tr>
+		<td><input id="MainContent_RadioAge65_0" type="radio" name="ctl00$MainContent$RadioAge65" value="Yes" /><label for="MainContent_RadioAge65_0">Yes</label></td><td><input id="MainContent_RadioAge65_1" type="radio" name="ctl00$MainContent$RadioAge65" value="No" checked="checked" /><label for="MainContent_RadioAge65_1">No</label></td>
+	</tr>
+</table>
+	</td>
+    <td>Blind?</td>
+    <td >
+		<table id="MainContent_Radioblind" display="inline">
+	<tr>
+		<td><input id="MainContent_Radioblind_0" type="radio" name="ctl00$MainContent$Radioblind" value="Yes" /><label for="MainContent_Radioblind_0">Yes</label></td><td><input id="MainContent_Radioblind_1" type="radio" name="ctl00$MainContent$Radioblind" value="No" checked="checked" /><label for="MainContent_Radioblind_1">No</label></td>
+	</tr>
+</table>
+	</td>
+   
+</tr>
+
+
+
+<tr>
+	<td class="style1" >
+		 Is spouse:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Age 65 or over?
+	</td>
+	<td  >
+		<table id="MainContent_Radioage65sp" display="inline">
+	<tr>
+		<td><input id="MainContent_Radioage65sp_0" type="radio" name="ctl00$MainContent$Radioage65sp" value="Yes" /><label for="MainContent_Radioage65sp_0">Yes</label></td><td><input id="MainContent_Radioage65sp_1" type="radio" name="ctl00$MainContent$Radioage65sp" value="No" checked="checked" /><label for="MainContent_Radioage65sp_1">No</label></td>
+	</tr>
+</table>
+	</td>
+    <td>Blind?</td>
+   
+	<td >
+		<table id="MainContent_RadioBlindSp" display="inline" >
+	<tr>
+		<td><input id="MainContent_RadioBlindSp_0" type="radio" name="ctl00$MainContent$RadioBlindSp" value="Yes" /><label for="MainContent_RadioBlindSp_0">Yes</label></td><td><input id="MainContent_RadioBlindSp_1" type="radio" name="ctl00$MainContent$RadioBlindSp" value="No" checked="checked" /><label for="MainContent_RadioBlindSp_1">No</label></td>
+	</tr>
+</table>
+	</td>
+</tr>
+
+
+
+</table>
+<hr />
+<table class = "responsive-table">
+<tr>
+	<td class="style3">
+		 <h3>Dependents</h3></tr>
+   <tr><td>
+         Enter number of dependents by age group.</td>
+</tr>
+</table>
+<table class = "responsive-table">
+<tr>
+	<td class="style1" >
+	</td>
+	<td class="inputcell">
+		2014
+	</td>
+	<td class="inputcell">
+		2015
+	</td>
+	<td class="inputcell" >
+		2016
+	</td>
+</tr>
+<tr>
+	<td class="style1">
+		Age 17 or younger
+	</td>
+	<td class="inputcell" align="left">
+		<input name="ctl00$MainContent$Under180" type="text" value="0" id="MainContent_Under180" class="inputbox" class="inputbox" />
+        <span id="MainContent_RequiredFieldValidator1" style="color:Black;display:none;"></span>
+        <span id="MainContent_RegularExpressionValidator1" style="display:none;"></span>
+	</td>
+		<td class="inputcell">
+
+		<input name="ctl00$MainContent$Under181" type="text" value="0" id="MainContent_Under181" class="inputbox" />
+        <span id="MainContent_RequiredFieldValidator2" style="color:Black;display:none;"></span>
+        <span id="MainContent_RegularExpressionValidator2" style="display:none;"></span>
+	</td>
+		<td class="inputcell">
+
+		<input name="ctl00$MainContent$Under182" type="text" value="0" id="MainContent_Under182" class="inputbox" />
+        <span id="MainContent_RequiredFieldValidator3" style="color:Black;display:none;"></span>
+        <span id="MainContent_RegularExpressionValidator3" style="display:none;"></span>
+	</td>
+</tr>
+<tr>
+	<td class="style1">
+		Age 18 or older
+	</td>
+		<td class="inputcell">
+
+		<input name="ctl00$MainContent$Over180" type="text" value="0" id="MainContent_Over180" class="inputbox" />
+        <span id="MainContent_RequiredFieldValidator4" style="color:Black;display:none;"></span>
+        <span id="MainContent_RegularExpressionValidator4" style="display:none;"></span>
+	</td>
+		<td class="inputcell">
+
+		<input name="ctl00$MainContent$Over181" type="text" value="0" id="MainContent_Over181" class="inputbox" />
+        <span id="MainContent_RequiredFieldValidator5" style="color:Black;display:none;"></span>
+        <span id="MainContent_RegularExpressionValidator5" style="display:none;"></span>
+	</td>
+		<td class="inputcell">
+
+		<input name="ctl00$MainContent$Over182" type="text" value="0" id="MainContent_Over182" class="inputbox" />
+        <span id="MainContent_RequiredFieldValidator6" style="color:Black;display:none;"></span>
+        <span id="MainContent_RegularExpressionValidator6" style="display:none;"></span>
+	</td>
+</tr>
+
+
+</table>
+</br>
+<hr />
+
+<table class = "responsive-table">
+<tr>
+	<td class="style3">
+		 <h3>Income</h3>
+         <p>Either 1) enter 2014 income in whole dollars and annual percentage growth rate<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; OR<br />
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 2) <u>uncheck the box</u> and enter values in 
+             whole dollars for each year</p></td>
+</tr>
+<tr>
+	<td>
+		<input id="MainContent_Inflate" type="checkbox" name="ctl00$MainContent$Inflate" checked="checked" onclick="MakeFutureReadOnly();" />&nbsp;After 2014, increase income by 
+    <input name="ctl00$MainContent$INCINFL" type="text" value="3" id="MainContent_INCINFL" tabindex="1" class="inflatebox" /> percent annually. 
+	</td>
+</tr>
+</table>
+<table class = "responsive-table">
+<tr>
+	<td class="style1">
+	</td>
+	<td class="inputcell">
+		2014
+	</td>
+	<td class="inputcell">
+		2015
+	</td>
+	<td class="inputcell">
+		2016
+	</td>
+</tr>
+<tr>
+	<td class="style1">
+		<a href="AGI.htm" 
+        onclick="window.open(this.href,'_blank','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=300');return false;">Adjusted gross income</a>
+	</td>
+		<td class="inputcell">
+
+		<input name="ctl00$MainContent$AGI0" type="text" value="0" id="MainContent_AGI0" class="inputbox" />
+
+        <span id="MainContent_RequiredFieldValidator7" style="color:Black;display:none;"></span>
+        <span id="MainContent_CompareFieldValidator1" style="color:Red;display:none;"></span>
+        
+	</td>
+		<td class="inputcell">
+
+		<input name="ctl00$MainContent$AGI1" type="text" value="0" id="MainContent_AGI1" disabled="disabled" class="aspNetDisabled inputbox" class="inputbox" />
+
+        <span id="MainContent_RequiredFieldValidator8" style="color:Black;display:none;"></span>
+        <span id="MainContent_CompareValidator2" style="color:Red;display:none;"></span>
+
+	</td>
+		<td class="inputcell">
+
+		<input name="ctl00$MainContent$AGI2" type="text" value="0" id="MainContent_AGI2" disabled="disabled" class="aspNetDisabled inputbox" class="inputbox" />
+        <span id="MainContent_RequiredFieldValidator9" style="color:Black;display:none;"></span>
+        <span id="MainContent_CompareValidator3" style="color:Red;display:none;"></span>
+
+	</td>
+</tr>
+<tr>
+	<td class="style1">
+    <a href="TXEXINT.htm" 
+        onclick="window.open(this.href,'_blank','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=300');return false;" >Tax-exempt interest</a>
+	</td>
+		<td class="inputcell">
+
+		<input name="ctl00$MainContent$TXEXINT0" type="text" value="0" id="MainContent_TXEXINT0" class="inputbox" />
+        <span id="MainContent_RequiredFieldValidator10" style="color:Black;display:none;"></span>
+        <span id="MainContent_CompareValidator4" style="color:Red;display:none;"></span>
+
+
+	</td>
+		<td class="inputcell">
+
+		<input name="ctl00$MainContent$TXEXINT1" type="text" value="0" id="MainContent_TXEXINT1" disabled="disabled" class="aspNetDisabled inputbox" class="inputbox" />
+
+        <span id="MainContent_RequiredFieldValidator11" style="color:Black;display:none;"></span>
+        <span id="MainContent_CompareValidator5" style="color:Red;display:none;"></span>
+	</td>
+		<td class="inputcell">
+
+		<input name="ctl00$MainContent$TXEXINT2" type="text" value="0" id="MainContent_TXEXINT2" disabled="disabled" class="aspNetDisabled inputbox" class="inputbox" />
+
+        <span id="MainContent_RequiredFieldValidator12" style="color:Black;display:none;"></span>
+        <span id="MainContent_CompareValidator6" style="color:Red;display:none;"></span>
+	</td>
+</tr>
+<tr>
+	<td class="style1">
+		<a href="Exempt Earnings.htm" 
+        onclick="window.open(this.href,'_blank','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=300');return false;" >Exempt earnings from abroad</a>
+	</td>
+		<td class="inputcell">
+
+		<input name="ctl00$MainContent$EARNABR0" type="text" value="0" id="MainContent_EARNABR0" class="inputbox" />
+        <span id="MainContent_RequiredFieldValidator13" style="color:Black;display:none;"></span>
+        <span id="MainContent_CompareValidator7" style="color:Red;display:none;"></span>
+	</td>
+		<td class="inputcell">
+
+		<input name="ctl00$MainContent$EARNABR1" type="text" value="0" id="MainContent_EARNABR1" disabled="disabled" class="aspNetDisabled inputbox" class="inputbox" />
+         <span id="MainContent_RequiredFieldValidator14" style="color:Black;display:none;"></span>
+         <span id="MainContent_CompareValidator8" style="color:Red;display:none;"></span>
+	</td>
+		<td class="inputcell">
+
+		<input name="ctl00$MainContent$EARNABR2" type="text" value="0" id="MainContent_EARNABR2" disabled="disabled" class="aspNetDisabled inputbox" class="inputbox" />
+         <span id="MainContent_RequiredFieldValidator15" style="color:Black;display:none;"></span>
+          <span id="MainContent_CompareValidator9" style="color:Red;display:none;"></span>
+
+	</td>
+</tr>
+<tr>
+	<td class="style1">
+		<a href="ModAGIofDep.htm" 
+        onclick="window.open(this.href,'_blank','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=300');return false;">Modified AGI of dependents</a> 
+	</td>
+		<td class="inputcell">
+
+		<input name="ctl00$MainContent$DEPMAGI0" type="text" value="0" id="MainContent_DEPMAGI0" class="inputbox" />
+         <span id="MainContent_RequiredFieldValidator16" style="color:Black;display:none;"></span>
+          <span id="MainContent_CompareValidator10" style="color:Red;display:none;"></span>
+
+	</td>
+		<td class="inputcell">
+
+		<input name="ctl00$MainContent$DEPMAGI1" type="text" value="0" id="MainContent_DEPMAGI1" disabled="disabled" class="aspNetDisabled inputbox" class="inputbox" />
+         <span id="MainContent_RequiredFieldValidator17" style="color:Black;display:none;"></span>
+          <span id="MainContent_CompareValidator11" style="color:Red;display:none;"></span>
+	</td>
+		<td class="inputcell">
+
+		<input name="ctl00$MainContent$DEPMAGI2" type="text" value="0" id="MainContent_DEPMAGI2" disabled="disabled" class="aspNetDisabled inputbox" class="inputbox" />
+         <span id="MainContent_RequiredFieldValidator18" style="color:Black;display:none;"></span>
+          <span id="MainContent_CompareValidator12" style="color:Red;display:none;"></span>
+	</td>
+</tr>
+</table>
+</br>
+
+
+<p align="center">
+	<input type="submit" name="ctl00$MainContent$calculateBtn" value="Calculate" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$calculateBtn&quot;, &quot;&quot;, true, &quot;Validation&quot;, &quot;&quot;, false, false))" id="MainContent_calculateBtn" accesskey="c" tabindex="29" style="color:#445870;height:25px;width:10%;text-align: center" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="submit" name="ctl00$MainContent$reset" value="Reset" id="MainContent_reset" accesskey="r" tabindex="30" style="color:#445870;height:25px;width:10%;text-align: center" />
+</p>
+</br>
+
+
+<a name="Results"/><h2>Estimated Tax Penalty </h2>
+
+
+<table style="background-color:#C6DEFF" class = "responsive-table">
+<tr>
+	<td class="style1">
+	</td>
+	<td class="yearcell">
+		2014
+	</td>
+	<td class="yearcell">
+		2015
+	</td>
+	<td class="yearcell">
+		2016
+	</td>
+</tr>
+<tr>
+	<td class="style1">
+		Tax penalty: In dollars
+	</td>
+	<td class="inputcell" style="background-color:#C6DEFF">
+		<input name="ctl00$MainContent$TAXPEN0" type="text" value="$0" readonly="readonly" id="MainContent_TAXPEN0" class="inputbox" style="border-style:None;background-color:#C6DEFF" />
+	</td>
+	<td class="inputcell">
+		<input name="ctl00$MainContent$TAXPEN1" type="text" value="$0" readonly="readonly" id="MainContent_TAXPEN1" class="inputbox" style="border-style:None;background-color:#C6DEFF" />
+	</td>
+	<td class="inputcell">
+		<input name="ctl00$MainContent$TAXPEN2" type="text" value="$0" readonly="readonly" id="MainContent_TAXPEN2" class="inputbox" style="border-style:None;background-color:#C6DEFF" />
+	</td>
+</tr>
+<tr>
+	<td class="style1">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;As percentage of AGI
+	</td>
+	<td class="inputcell">
+		<input name="ctl00$MainContent$APCTAGI0" type="text" value="0.0%" readonly="readonly" id="MainContent_APCTAGI0" class="inputbox" style="border-style:None;background-color:#C6DEFF" />
+	</td>
+	<td class="inputcell">
+		<input name="ctl00$MainContent$APCTAGI1" type="text" value="0.0%" readonly="readonly" id="MainContent_APCTAGI1" class="inputbox" style="border-style:None;background-color:#C6DEFF" />
+	</td>
+	<td class="inputcell">
+		<input name="ctl00$MainContent$APCTAGI2" type="text" value="0.0%" readonly="readonly" id="MainContent_APCTAGI2" class="inputbox" style="border-style:None;background-color:#C6DEFF" />
+	</td>
+</tr>
+
+<tr>
+	<td colspan="4">
+<input name="ctl00$MainContent$NFText" type="text" readonly="readonly" id="MainContent_NFText" class="textbox" style="border-style:None;background-color:#C6DEFF" />
+</td>
+</tr>
+</table>
+<table class = "responsive-table">
+<tr>
+	<td colspan="4">
+<i>Factors determining the penalty</i>
+</td>
+</tr>
+<tr>
+	<td class="style1">
+		Minimum dollar amount
+	</td>
+	<td class="inputcell">
+		<input name="ctl00$MainContent$MinDol0" type="text" value="$0" readonly="readonly" id="MainContent_MinDol0" class="inputbox" style="border-style:None;" />
+	</td>
+	<td class="inputcell">
+		<input name="ctl00$MainContent$MinDol1" type="text" value="$0" readonly="readonly" id="MainContent_MinDol1" class="inputbox" style="border-style:None;" />
+	</td>
+	<td class="inputcell">
+		<input name="ctl00$MainContent$MinDol2" type="text" value="$0" readonly="readonly" id="MainContent_MinDol2" class="inputbox" style="border-style:None;" />
+	</td>
+</tr>
+<tr>
+	<td class="style1">
+		Penalty calculated as a percentage of income
+	</td>
+	<td class="inputcell">
+		<input name="ctl00$MainContent$PCTINC0" type="text" value="$0" readonly="readonly" id="MainContent_PCTINC0" class="inputbox" style="border-style:None;" />
+	</td>
+	<td class="inputcell">
+		<input name="ctl00$MainContent$PCTINC1" type="text" value="$0" readonly="readonly" id="MainContent_PCTINC1" class="inputbox" style="border-style:None;" />
+	</td>
+	<td class="inputcell">
+		<input name="ctl00$MainContent$PCTINC2" type="text" value="$0" readonly="readonly" id="MainContent_PCTINC2" class="inputbox" style="border-style:None;" />
+	</td>
+</tr>
+<tr>
+	<td class="style1">
+		Average premium of bronze plan
+	</td>
+	<td class="inputcell">
+		<input name="ctl00$MainContent$Bronze0" type="text" value="$0" readonly="readonly" id="MainContent_Bronze0" class="inputbox" style="border-style:None;" />
+	</td>
+	<td class="inputcell">
+		<input name="ctl00$MainContent$Bronze1" type="text" value="$0" readonly="readonly" id="MainContent_Bronze1" class="inputbox" style="border-style:None;" />
+	</td>
+	<td class="inputcell">
+		<input name="ctl00$MainContent$Bronze2" type="text" value="$0" readonly="readonly" id="MainContent_Bronze2" class="inputbox" style="border-style:None;" />
+	</td>
+</tr>
+</table>
+</br>
+<table  class = "responsive-table">
+
+<tr><td><h4>Calculating the Penalty</h4><p style="color: #445870">In each year, the penalty is capped based on the national average premium for bronze level insurance plans for single individuals and the number of people in the insurance unit.Specifically, the cap equals that average premium times the number of people up to a maximum of five. 
+       The average bronze plan premium for 2014 and the projected premiums for 2015 and 2016 are:</br> &#09;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#09;2014:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $2,448
+</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2015:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $2,570 
+</br>&#09;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#09;2016:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $2,699
+</br>For an explanation of how the average bronze plan premium was calculated for 2014, see <a href="http://www.irs.gov/irb/2014-33_IRB/ar11.html" 
+        onclick="window.open(http://www.irs.gov/irb/2014-33_IRB/ar11.html);return false;"> 
+        IRS Internal Revenue Bulletin:  2014-33. </a>
+</p></td></tr>
+
+
+</table>
+</br>
+<table class = "responsive-table">
+<tr><td><h4>Acknowledgements</h4>	
+<p style="color: #445870">This calculator was created by Hang Nguyen and Roberton Williams of the Tax Policy Center with programming assistance from Jessica Kelly of the Urban Institute. Linda Blumberg, Matthew Buettgens, John Holahan, Genevieve Kenney, and Stephen Zuckerman of the Urban Institute’s Health Policy Center and many Tax Policy Center analysts provided helpful comments and suggestions.
+</p></td></tr>
+</table>
+
+<div id="MainContent_ValidationSummary1" style="display:none;">
+
+</div>
+
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_ValidationSummaries =  new Array(document.getElementById("MainContent_ValidationSummary1"));
+var Page_Validators =  new Array(document.getElementById("MainContent_RequiredFieldValidator1"), document.getElementById("MainContent_RegularExpressionValidator1"), document.getElementById("MainContent_RequiredFieldValidator2"), document.getElementById("MainContent_RegularExpressionValidator2"), document.getElementById("MainContent_RequiredFieldValidator3"), document.getElementById("MainContent_RegularExpressionValidator3"), document.getElementById("MainContent_RequiredFieldValidator4"), document.getElementById("MainContent_RegularExpressionValidator4"), document.getElementById("MainContent_RequiredFieldValidator5"), document.getElementById("MainContent_RegularExpressionValidator5"), document.getElementById("MainContent_RequiredFieldValidator6"), document.getElementById("MainContent_RegularExpressionValidator6"), document.getElementById("MainContent_RequiredFieldValidator7"), document.getElementById("MainContent_CompareFieldValidator1"), document.getElementById("MainContent_RequiredFieldValidator8"), document.getElementById("MainContent_CompareValidator2"), document.getElementById("MainContent_RequiredFieldValidator9"), document.getElementById("MainContent_CompareValidator3"), document.getElementById("MainContent_RequiredFieldValidator10"), document.getElementById("MainContent_CompareValidator4"), document.getElementById("MainContent_RequiredFieldValidator11"), document.getElementById("MainContent_CompareValidator5"), document.getElementById("MainContent_RequiredFieldValidator12"), document.getElementById("MainContent_CompareValidator6"), document.getElementById("MainContent_RequiredFieldValidator13"), document.getElementById("MainContent_CompareValidator7"), document.getElementById("MainContent_RequiredFieldValidator14"), document.getElementById("MainContent_CompareValidator8"), document.getElementById("MainContent_RequiredFieldValidator15"), document.getElementById("MainContent_CompareValidator9"), document.getElementById("MainContent_RequiredFieldValidator16"), document.getElementById("MainContent_CompareValidator10"), document.getElementById("MainContent_RequiredFieldValidator17"), document.getElementById("MainContent_CompareValidator11"), document.getElementById("MainContent_RequiredFieldValidator18"), document.getElementById("MainContent_CompareValidator12"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var MainContent_RequiredFieldValidator1 = document.all ? document.all["MainContent_RequiredFieldValidator1"] : document.getElementById("MainContent_RequiredFieldValidator1");
+MainContent_RequiredFieldValidator1.controltovalidate = "MainContent_Under180";
+MainContent_RequiredFieldValidator1.errormessage = "Please fill in number of dependents under age 18 for 2014.";
+MainContent_RequiredFieldValidator1.display = "None";
+MainContent_RequiredFieldValidator1.validationGroup = "Validation";
+MainContent_RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator1.initialvalue = "";
+var MainContent_RegularExpressionValidator1 = document.all ? document.all["MainContent_RegularExpressionValidator1"] : document.getElementById("MainContent_RegularExpressionValidator1");
+MainContent_RegularExpressionValidator1.controltovalidate = "MainContent_Under180";
+MainContent_RegularExpressionValidator1.errormessage = "Please enter only whole numbers in the \'dependents under age 18\' field";
+MainContent_RegularExpressionValidator1.display = "None";
+MainContent_RegularExpressionValidator1.validationGroup = "Validation";
+MainContent_RegularExpressionValidator1.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+MainContent_RegularExpressionValidator1.validationexpression = "[0-9]+(,?[0-9]?)+";
+var MainContent_RequiredFieldValidator2 = document.all ? document.all["MainContent_RequiredFieldValidator2"] : document.getElementById("MainContent_RequiredFieldValidator2");
+MainContent_RequiredFieldValidator2.controltovalidate = "MainContent_Under181";
+MainContent_RequiredFieldValidator2.errormessage = "Please fill in number of dependents under age 18 for 2015.";
+MainContent_RequiredFieldValidator2.display = "None";
+MainContent_RequiredFieldValidator2.validationGroup = "Validation";
+MainContent_RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator2.initialvalue = "";
+var MainContent_RegularExpressionValidator2 = document.all ? document.all["MainContent_RegularExpressionValidator2"] : document.getElementById("MainContent_RegularExpressionValidator2");
+MainContent_RegularExpressionValidator2.controltovalidate = "MainContent_Under181";
+MainContent_RegularExpressionValidator2.errormessage = "Please enter only whole numbers in the \'dependents under age 18\' field";
+MainContent_RegularExpressionValidator2.display = "None";
+MainContent_RegularExpressionValidator2.validationGroup = "Validation";
+MainContent_RegularExpressionValidator2.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+MainContent_RegularExpressionValidator2.validationexpression = "[0-9]+(,?[0-9]?)+";
+var MainContent_RequiredFieldValidator3 = document.all ? document.all["MainContent_RequiredFieldValidator3"] : document.getElementById("MainContent_RequiredFieldValidator3");
+MainContent_RequiredFieldValidator3.controltovalidate = "MainContent_Under182";
+MainContent_RequiredFieldValidator3.errormessage = "Please fill in number of dependents under age 18 for 2016.";
+MainContent_RequiredFieldValidator3.display = "None";
+MainContent_RequiredFieldValidator3.validationGroup = "Validation";
+MainContent_RequiredFieldValidator3.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator3.initialvalue = "";
+var MainContent_RegularExpressionValidator3 = document.all ? document.all["MainContent_RegularExpressionValidator3"] : document.getElementById("MainContent_RegularExpressionValidator3");
+MainContent_RegularExpressionValidator3.controltovalidate = "MainContent_Under182";
+MainContent_RegularExpressionValidator3.errormessage = "Please enter only whole numbers in the \'dependents under age 18\' field";
+MainContent_RegularExpressionValidator3.display = "None";
+MainContent_RegularExpressionValidator3.validationGroup = "Validation";
+MainContent_RegularExpressionValidator3.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+MainContent_RegularExpressionValidator3.validationexpression = "[0-9]+(,?[0-9]?)+";
+var MainContent_RequiredFieldValidator4 = document.all ? document.all["MainContent_RequiredFieldValidator4"] : document.getElementById("MainContent_RequiredFieldValidator4");
+MainContent_RequiredFieldValidator4.controltovalidate = "MainContent_Over180";
+MainContent_RequiredFieldValidator4.errormessage = "Please fill in number of dependents over age 18 for 2014.";
+MainContent_RequiredFieldValidator4.display = "None";
+MainContent_RequiredFieldValidator4.validationGroup = "Validation";
+MainContent_RequiredFieldValidator4.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator4.initialvalue = "";
+var MainContent_RegularExpressionValidator4 = document.all ? document.all["MainContent_RegularExpressionValidator4"] : document.getElementById("MainContent_RegularExpressionValidator4");
+MainContent_RegularExpressionValidator4.controltovalidate = "MainContent_Over180";
+MainContent_RegularExpressionValidator4.errormessage = "Please enter only whole numbers in the \'dependents over age 18\' field";
+MainContent_RegularExpressionValidator4.display = "None";
+MainContent_RegularExpressionValidator4.validationGroup = "Validation";
+MainContent_RegularExpressionValidator4.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+MainContent_RegularExpressionValidator4.validationexpression = "[0-9]+(,?[0-9]?)+";
+var MainContent_RequiredFieldValidator5 = document.all ? document.all["MainContent_RequiredFieldValidator5"] : document.getElementById("MainContent_RequiredFieldValidator5");
+MainContent_RequiredFieldValidator5.controltovalidate = "MainContent_Over181";
+MainContent_RequiredFieldValidator5.errormessage = "Please fill in number of dependents over age 18 for 2015.";
+MainContent_RequiredFieldValidator5.display = "None";
+MainContent_RequiredFieldValidator5.validationGroup = "Validation";
+MainContent_RequiredFieldValidator5.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator5.initialvalue = "";
+var MainContent_RegularExpressionValidator5 = document.all ? document.all["MainContent_RegularExpressionValidator5"] : document.getElementById("MainContent_RegularExpressionValidator5");
+MainContent_RegularExpressionValidator5.controltovalidate = "MainContent_Over181";
+MainContent_RegularExpressionValidator5.errormessage = "Please enter only whole numbers in the \'dependents over age 18\' field";
+MainContent_RegularExpressionValidator5.display = "None";
+MainContent_RegularExpressionValidator5.validationGroup = "Validation";
+MainContent_RegularExpressionValidator5.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+MainContent_RegularExpressionValidator5.validationexpression = "[0-9]+(,?[0-9]?)+";
+var MainContent_RequiredFieldValidator6 = document.all ? document.all["MainContent_RequiredFieldValidator6"] : document.getElementById("MainContent_RequiredFieldValidator6");
+MainContent_RequiredFieldValidator6.controltovalidate = "MainContent_Over182";
+MainContent_RequiredFieldValidator6.errormessage = "Please fill in number of dependents over age 18 for 2016.";
+MainContent_RequiredFieldValidator6.display = "None";
+MainContent_RequiredFieldValidator6.validationGroup = "Validation";
+MainContent_RequiredFieldValidator6.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator6.initialvalue = "";
+var MainContent_RegularExpressionValidator6 = document.all ? document.all["MainContent_RegularExpressionValidator6"] : document.getElementById("MainContent_RegularExpressionValidator6");
+MainContent_RegularExpressionValidator6.controltovalidate = "MainContent_Over182";
+MainContent_RegularExpressionValidator6.errormessage = "Please enter only whole numbers in the \'dependents over age 18\' field";
+MainContent_RegularExpressionValidator6.display = "None";
+MainContent_RegularExpressionValidator6.validationGroup = "Validation";
+MainContent_RegularExpressionValidator6.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+MainContent_RegularExpressionValidator6.validationexpression = "[0-9]+(,?[0-9]?)+";
+var MainContent_RequiredFieldValidator7 = document.all ? document.all["MainContent_RequiredFieldValidator7"] : document.getElementById("MainContent_RequiredFieldValidator7");
+MainContent_RequiredFieldValidator7.controltovalidate = "MainContent_AGI0";
+MainContent_RequiredFieldValidator7.errormessage = "Please fill in adjusted gross income for 2014.";
+MainContent_RequiredFieldValidator7.display = "None";
+MainContent_RequiredFieldValidator7.validationGroup = "Validation";
+MainContent_RequiredFieldValidator7.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator7.initialvalue = "";
+var MainContent_CompareFieldValidator1 = document.all ? document.all["MainContent_CompareFieldValidator1"] : document.getElementById("MainContent_CompareFieldValidator1");
+MainContent_CompareFieldValidator1.controltovalidate = "MainContent_AGI0";
+MainContent_CompareFieldValidator1.errormessage = "Please enter a whole number for adjusted gross income for 2014 of zero or greater.";
+MainContent_CompareFieldValidator1.display = "None";
+MainContent_CompareFieldValidator1.validationGroup = "Validation";
+MainContent_CompareFieldValidator1.type = "Integer";
+MainContent_CompareFieldValidator1.evaluationfunction = "CompareValidatorEvaluateIsValid";
+MainContent_CompareFieldValidator1.valuetocompare = "0";
+MainContent_CompareFieldValidator1.operator = "GreaterThanEqual";
+var MainContent_RequiredFieldValidator8 = document.all ? document.all["MainContent_RequiredFieldValidator8"] : document.getElementById("MainContent_RequiredFieldValidator8");
+MainContent_RequiredFieldValidator8.controltovalidate = "MainContent_AGI1";
+MainContent_RequiredFieldValidator8.errormessage = "Please fill in adjusted gross income for 2015.";
+MainContent_RequiredFieldValidator8.display = "None";
+MainContent_RequiredFieldValidator8.validationGroup = "Validation";
+MainContent_RequiredFieldValidator8.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator8.initialvalue = "";
+var MainContent_CompareValidator2 = document.all ? document.all["MainContent_CompareValidator2"] : document.getElementById("MainContent_CompareValidator2");
+MainContent_CompareValidator2.controltovalidate = "MainContent_AGI1";
+MainContent_CompareValidator2.errormessage = "Please enter a whole number for adjusted gross income for 2015 of zero or greater.";
+MainContent_CompareValidator2.display = "None";
+MainContent_CompareValidator2.validationGroup = "Validation";
+MainContent_CompareValidator2.type = "Integer";
+MainContent_CompareValidator2.evaluationfunction = "CompareValidatorEvaluateIsValid";
+MainContent_CompareValidator2.valuetocompare = "0";
+MainContent_CompareValidator2.operator = "GreaterThanEqual";
+var MainContent_RequiredFieldValidator9 = document.all ? document.all["MainContent_RequiredFieldValidator9"] : document.getElementById("MainContent_RequiredFieldValidator9");
+MainContent_RequiredFieldValidator9.controltovalidate = "MainContent_AGI2";
+MainContent_RequiredFieldValidator9.errormessage = "Please fill in adjusted gross income for 2016.";
+MainContent_RequiredFieldValidator9.display = "None";
+MainContent_RequiredFieldValidator9.validationGroup = "Validation";
+MainContent_RequiredFieldValidator9.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator9.initialvalue = "";
+var MainContent_CompareValidator3 = document.all ? document.all["MainContent_CompareValidator3"] : document.getElementById("MainContent_CompareValidator3");
+MainContent_CompareValidator3.controltovalidate = "MainContent_AGI2";
+MainContent_CompareValidator3.errormessage = "Please enter a whole number for adjusted gross income for 2016 of zero or greater.";
+MainContent_CompareValidator3.display = "None";
+MainContent_CompareValidator3.validationGroup = "Validation";
+MainContent_CompareValidator3.type = "Integer";
+MainContent_CompareValidator3.evaluationfunction = "CompareValidatorEvaluateIsValid";
+MainContent_CompareValidator3.valuetocompare = "0";
+MainContent_CompareValidator3.operator = "GreaterThanEqual";
+var MainContent_RequiredFieldValidator10 = document.all ? document.all["MainContent_RequiredFieldValidator10"] : document.getElementById("MainContent_RequiredFieldValidator10");
+MainContent_RequiredFieldValidator10.controltovalidate = "MainContent_TXEXINT0";
+MainContent_RequiredFieldValidator10.errormessage = "Please fill in tax-exempt interest for 2014.";
+MainContent_RequiredFieldValidator10.display = "None";
+MainContent_RequiredFieldValidator10.validationGroup = "Validation";
+MainContent_RequiredFieldValidator10.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator10.initialvalue = "";
+var MainContent_CompareValidator4 = document.all ? document.all["MainContent_CompareValidator4"] : document.getElementById("MainContent_CompareValidator4");
+MainContent_CompareValidator4.controltovalidate = "MainContent_TXEXINT0";
+MainContent_CompareValidator4.errormessage = "Please fill in tax-exempt interest for 2014 of zero or greater.";
+MainContent_CompareValidator4.display = "None";
+MainContent_CompareValidator4.validationGroup = "Validation";
+MainContent_CompareValidator4.type = "Integer";
+MainContent_CompareValidator4.evaluationfunction = "CompareValidatorEvaluateIsValid";
+MainContent_CompareValidator4.valuetocompare = "0";
+MainContent_CompareValidator4.operator = "GreaterThanEqual";
+var MainContent_RequiredFieldValidator11 = document.all ? document.all["MainContent_RequiredFieldValidator11"] : document.getElementById("MainContent_RequiredFieldValidator11");
+MainContent_RequiredFieldValidator11.controltovalidate = "MainContent_TXEXINT1";
+MainContent_RequiredFieldValidator11.errormessage = "Please fill in tax-exempt interest for 2015.";
+MainContent_RequiredFieldValidator11.display = "None";
+MainContent_RequiredFieldValidator11.validationGroup = "Validation";
+MainContent_RequiredFieldValidator11.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator11.initialvalue = "";
+var MainContent_CompareValidator5 = document.all ? document.all["MainContent_CompareValidator5"] : document.getElementById("MainContent_CompareValidator5");
+MainContent_CompareValidator5.controltovalidate = "MainContent_TXEXINT1";
+MainContent_CompareValidator5.errormessage = "Please fill in tax-exempt interest for 2015 of zero or greater.";
+MainContent_CompareValidator5.display = "None";
+MainContent_CompareValidator5.validationGroup = "Validation";
+MainContent_CompareValidator5.type = "Integer";
+MainContent_CompareValidator5.evaluationfunction = "CompareValidatorEvaluateIsValid";
+MainContent_CompareValidator5.valuetocompare = "0";
+MainContent_CompareValidator5.operator = "GreaterThanEqual";
+var MainContent_RequiredFieldValidator12 = document.all ? document.all["MainContent_RequiredFieldValidator12"] : document.getElementById("MainContent_RequiredFieldValidator12");
+MainContent_RequiredFieldValidator12.controltovalidate = "MainContent_TXEXINT2";
+MainContent_RequiredFieldValidator12.errormessage = "Please fill in tax-exempt interest for 2016.";
+MainContent_RequiredFieldValidator12.display = "None";
+MainContent_RequiredFieldValidator12.validationGroup = "Validation";
+MainContent_RequiredFieldValidator12.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator12.initialvalue = "";
+var MainContent_CompareValidator6 = document.all ? document.all["MainContent_CompareValidator6"] : document.getElementById("MainContent_CompareValidator6");
+MainContent_CompareValidator6.controltovalidate = "MainContent_TXEXINT2";
+MainContent_CompareValidator6.errormessage = "Please fill in tax-exempt interest for 2016 of zero or greater.";
+MainContent_CompareValidator6.display = "None";
+MainContent_CompareValidator6.validationGroup = "Validation";
+MainContent_CompareValidator6.type = "Integer";
+MainContent_CompareValidator6.evaluationfunction = "CompareValidatorEvaluateIsValid";
+MainContent_CompareValidator6.valuetocompare = "0";
+MainContent_CompareValidator6.operator = "GreaterThanEqual";
+var MainContent_RequiredFieldValidator13 = document.all ? document.all["MainContent_RequiredFieldValidator13"] : document.getElementById("MainContent_RequiredFieldValidator13");
+MainContent_RequiredFieldValidator13.controltovalidate = "MainContent_EARNABR0";
+MainContent_RequiredFieldValidator13.errormessage = "Please fill in exempt earnings from abroad for 2014.";
+MainContent_RequiredFieldValidator13.display = "None";
+MainContent_RequiredFieldValidator13.validationGroup = "Validation";
+MainContent_RequiredFieldValidator13.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator13.initialvalue = "";
+var MainContent_CompareValidator7 = document.all ? document.all["MainContent_CompareValidator7"] : document.getElementById("MainContent_CompareValidator7");
+MainContent_CompareValidator7.controltovalidate = "MainContent_EARNABR0";
+MainContent_CompareValidator7.errormessage = "Please fill in exempt earnings for 2014 of zero or greater.";
+MainContent_CompareValidator7.display = "None";
+MainContent_CompareValidator7.validationGroup = "Validation";
+MainContent_CompareValidator7.type = "Integer";
+MainContent_CompareValidator7.evaluationfunction = "CompareValidatorEvaluateIsValid";
+MainContent_CompareValidator7.valuetocompare = "0";
+MainContent_CompareValidator7.operator = "GreaterThanEqual";
+var MainContent_RequiredFieldValidator14 = document.all ? document.all["MainContent_RequiredFieldValidator14"] : document.getElementById("MainContent_RequiredFieldValidator14");
+MainContent_RequiredFieldValidator14.controltovalidate = "MainContent_EARNABR1";
+MainContent_RequiredFieldValidator14.errormessage = "Please fill in exempt earnings from abroad for 2015.";
+MainContent_RequiredFieldValidator14.display = "None";
+MainContent_RequiredFieldValidator14.validationGroup = "Validation";
+MainContent_RequiredFieldValidator14.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator14.initialvalue = "";
+var MainContent_CompareValidator8 = document.all ? document.all["MainContent_CompareValidator8"] : document.getElementById("MainContent_CompareValidator8");
+MainContent_CompareValidator8.controltovalidate = "MainContent_EARNABR1";
+MainContent_CompareValidator8.errormessage = "Please fill in exempt earnings for 2015 of zero or greater.";
+MainContent_CompareValidator8.display = "None";
+MainContent_CompareValidator8.validationGroup = "Validation";
+MainContent_CompareValidator8.type = "Integer";
+MainContent_CompareValidator8.evaluationfunction = "CompareValidatorEvaluateIsValid";
+MainContent_CompareValidator8.valuetocompare = "0";
+MainContent_CompareValidator8.operator = "GreaterThanEqual";
+var MainContent_RequiredFieldValidator15 = document.all ? document.all["MainContent_RequiredFieldValidator15"] : document.getElementById("MainContent_RequiredFieldValidator15");
+MainContent_RequiredFieldValidator15.controltovalidate = "MainContent_EARNABR2";
+MainContent_RequiredFieldValidator15.errormessage = "Please fill in exempt earnings from abroad for 2016.";
+MainContent_RequiredFieldValidator15.display = "None";
+MainContent_RequiredFieldValidator15.validationGroup = "Validation";
+MainContent_RequiredFieldValidator15.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator15.initialvalue = "";
+var MainContent_CompareValidator9 = document.all ? document.all["MainContent_CompareValidator9"] : document.getElementById("MainContent_CompareValidator9");
+MainContent_CompareValidator9.controltovalidate = "MainContent_EARNABR2";
+MainContent_CompareValidator9.errormessage = "Please fill in exempt earnings for 2016 of zero or greater.";
+MainContent_CompareValidator9.display = "None";
+MainContent_CompareValidator9.validationGroup = "Validation";
+MainContent_CompareValidator9.type = "Integer";
+MainContent_CompareValidator9.evaluationfunction = "CompareValidatorEvaluateIsValid";
+MainContent_CompareValidator9.valuetocompare = "0";
+MainContent_CompareValidator9.operator = "GreaterThanEqual";
+var MainContent_RequiredFieldValidator16 = document.all ? document.all["MainContent_RequiredFieldValidator16"] : document.getElementById("MainContent_RequiredFieldValidator16");
+MainContent_RequiredFieldValidator16.controltovalidate = "MainContent_DEPMAGI0";
+MainContent_RequiredFieldValidator16.errormessage = "Please fill modified adjusted gross income of dependents for 2014.";
+MainContent_RequiredFieldValidator16.display = "None";
+MainContent_RequiredFieldValidator16.validationGroup = "Validation";
+MainContent_RequiredFieldValidator16.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator16.initialvalue = "";
+var MainContent_CompareValidator10 = document.all ? document.all["MainContent_CompareValidator10"] : document.getElementById("MainContent_CompareValidator10");
+MainContent_CompareValidator10.controltovalidate = "MainContent_DEPMAGI0";
+MainContent_CompareValidator10.errormessage = "Please fill modified adjusted gross income of dependents for 2014 of zero or greater.";
+MainContent_CompareValidator10.display = "None";
+MainContent_CompareValidator10.validationGroup = "Validation";
+MainContent_CompareValidator10.type = "Integer";
+MainContent_CompareValidator10.evaluationfunction = "CompareValidatorEvaluateIsValid";
+MainContent_CompareValidator10.valuetocompare = "0";
+MainContent_CompareValidator10.operator = "GreaterThanEqual";
+var MainContent_RequiredFieldValidator17 = document.all ? document.all["MainContent_RequiredFieldValidator17"] : document.getElementById("MainContent_RequiredFieldValidator17");
+MainContent_RequiredFieldValidator17.controltovalidate = "MainContent_DEPMAGI1";
+MainContent_RequiredFieldValidator17.errormessage = "Please fill modified adjusted gross income of dependents for 2015.";
+MainContent_RequiredFieldValidator17.display = "None";
+MainContent_RequiredFieldValidator17.validationGroup = "Validation";
+MainContent_RequiredFieldValidator17.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator17.initialvalue = "";
+var MainContent_CompareValidator11 = document.all ? document.all["MainContent_CompareValidator11"] : document.getElementById("MainContent_CompareValidator11");
+MainContent_CompareValidator11.controltovalidate = "MainContent_DEPMAGI1";
+MainContent_CompareValidator11.errormessage = "Please fill modified adjusted gross income of dependents for 2015 of zero or greater.";
+MainContent_CompareValidator11.display = "None";
+MainContent_CompareValidator11.validationGroup = "Validation";
+MainContent_CompareValidator11.type = "Integer";
+MainContent_CompareValidator11.evaluationfunction = "CompareValidatorEvaluateIsValid";
+MainContent_CompareValidator11.valuetocompare = "0";
+MainContent_CompareValidator11.operator = "GreaterThanEqual";
+var MainContent_RequiredFieldValidator18 = document.all ? document.all["MainContent_RequiredFieldValidator18"] : document.getElementById("MainContent_RequiredFieldValidator18");
+MainContent_RequiredFieldValidator18.controltovalidate = "MainContent_DEPMAGI2";
+MainContent_RequiredFieldValidator18.errormessage = "Please fill modified adjusted gross income of dependents for 2016.";
+MainContent_RequiredFieldValidator18.display = "None";
+MainContent_RequiredFieldValidator18.validationGroup = "Validation";
+MainContent_RequiredFieldValidator18.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator18.initialvalue = "";
+var MainContent_CompareValidator12 = document.all ? document.all["MainContent_CompareValidator12"] : document.getElementById("MainContent_CompareValidator12");
+MainContent_CompareValidator12.controltovalidate = "MainContent_DEPMAGI2";
+MainContent_CompareValidator12.errormessage = "Please fill modified adjusted gross income of dependents for 2016 of zero or greater.";
+MainContent_CompareValidator12.display = "None";
+MainContent_CompareValidator12.validationGroup = "Validation";
+MainContent_CompareValidator12.type = "Integer";
+MainContent_CompareValidator12.evaluationfunction = "CompareValidatorEvaluateIsValid";
+MainContent_CompareValidator12.valuetocompare = "0";
+MainContent_CompareValidator12.operator = "GreaterThanEqual";
+var MainContent_ValidationSummary1 = document.all ? document.all["MainContent_ValidationSummary1"] : document.getElementById("MainContent_ValidationSummary1");
+MainContent_ValidationSummary1.showmessagebox = "True";
+MainContent_ValidationSummary1.showsummary = "False";
+MainContent_ValidationSummary1.validationGroup = "Validation";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+</body>
+</html>

@@ -1,0 +1,538 @@
+body
+{
+	background: #FFFFFF;
+	font-size: .80em;
+	font-family: Arial, Helvetica, Sans-Serif;
+	margin: 0px;
+	padding: 0px;
+	color: #191919;
+	
+	
+}
+
+a:focus {background-color: #e0e0e0; }
+a:link {color: #066395; text-decoration: none;}
+a:visited { color: #066395; text-decoration: none; }
+a:hover {background-color: #e0e0e0; text-decoration: none;  }
+a:active {background-color: #e0e0e0;   }
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+    font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 12px;
+	color: #191919;
+}
+
+th
+{
+    text-align:left;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-weight: bold;
+	text-align:left;
+}
+
+h1 { font: bold 16px Arial, Helvetica, sans-serif; color:  #445870;
+	height: 95px;
+	width: 575px;
+}
+h2 { font: bold 16px Arial, Helvetica, sans-serif; color:  #445870;}
+
+h3 {font: bold 14px Arial, Helvetica, sans-serif; color: #191919; margin: 10px 0 2px 0;
+	width: auto;
+	height: 15px;
+}
+ 
+h4 {font: bold 14px Arial, Helvetica, sans-serif; color: #445870; }
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width: 100%;
+    background-color: #fff;
+    margin: 0px auto 0px auto;
+    border: 0px solid #496077;
+  
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-image:url();
+    
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+	/*background: url(http://www.taxpolicycenter.org/images/MPCTitle.gif);*/
+	background-position: top left;
+	background-repeat:no-repeat;
+    width: 100%;
+    line-height: 2em;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: maroon;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+.main
+{
+    width: 100%;
+    padding: 0px 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 420px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+.textPercBoxes
+{
+    text-align:left;
+    /*width: 27px;*/
+    border: none;
+}
+.textDollarBoxes
+{
+    text-align:left;
+    /*width:60px;*/
+    border:none;
+}
+.resultBoxes
+{
+    text-align: left;
+    /*width: 60px;*/
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-color:#3a4f63;
+    width:100%;
+}
+
+div.menu
+{
+    padding: 4px 0px 4px 8px;
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #465c71;
+    border: 1px #4e667d solid;
+    color: #dde4ec;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+div.menu ul li a:hover
+{
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry 
+{
+    /*width: 320px;*/
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    /*width: 320px;*/
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+
+
+
+.textInputBoxes
+{
+    text-align: right;
+    /*width: 90px;*/
+    margin-left: 5px;
+    
+}
+
+
+
+.textInputBoxesUL
+{
+    text-align: right;
+    /*width: 90px;*/
+    margin-left: 5px;
+    border-bottom:1px solid;
+    border-bottom-color:Black;
+    
+}
+
+.textInputBoxesbold
+{
+    text-align: right;
+    width: 100px;
+    margin-left: 5px;
+    font-weight:bold;
+    
+}
+.textInputBoxesCase
+{
+	/*width:148px;*/
+	text-align:center;
+	
+}
+.textInputBoxesCaselabel
+{
+	/*width:148px;*/
+	text-align:center;
+	font-weight:bold;
+	text-align:center;
+
+	
+}
+.labelInputBoxes
+        {
+            width: 201px;
+            text-align: left;
+        }
+        
+.labelInputBoxesUL
+        {
+            width: 201px;
+            text-align: left;
+            border-bottom:1px solid;
+            border-bottom-color:Black;
+        }
+
+.labelOutputBoxesLeftCol
+{
+  
+	text-align:left;
+     width: 165px;
+     padding-right:10px;
+
+}
+
+
+.labelOutputBoxesLeftColBold
+{
+    text-align:right;
+    font-weight:bold;
+    width: 165px;
+    border:none;
+    padding-right:5px;
+}
+.textOutputBoxes
+{
+   text-align: right;
+	padding-right:5px;
+	width:82px;
+    margin-right: 0px;
+}
+
+.textOutputBoxesUL
+{
+   text-align: right;
+	width:82px;
+	border-bottom: 1px dashed;
+	padding-right:5px;
+	margin-bottom:1px;
+	border-bottom-color: Black;
+	
+}
+
+.textOutputBoxesbold
+{
+   text-align: right;
+   font-weight:bold;
+	width:82px;
+	padding-right:12px;
+}
+
+.inputsection
+{
+ font: bold 16px Arial, Helvetica, sans-serif; color:  #445870; 	
+}
+.firstInputcol
+{
+	width:175px;
+
+}
+.firstInputcolUL
+{
+	width:175px;
+	border-bottom:1px solid;
+	border-bottom-color:Black;
+}
+.firstInputcolyear
+{
+	width:340px;
+	border-bottom:1px solid;
+	border-bottom-color:Black;
+}
+.inputtable
+{
+	border-spacing:15px;
+	border-collapse:collapse;
+
+}
+.outputtable
+{
+	border-spacing:15px;
+	border-collapse:collapse;
+	
+	
+}
+.summaryLeftCol
+{
+	width:200px;
+}
+
+.summarypanel
+{
+	width:155px;
+	padding: 0px 0px 0px 5px;
+	text-align:center;
+	font-weight:bold;
+	color: #445870;
+	vertical-align:middle;
+
+	margin-left: 2px;
+
+	
+	
+}
+
+.summarypanel1
+{
+	width:155px;
+	padding: 0px 0px 0px 5px;
+	text-align:center;
+	font-weight:bold;
+	color: #445870;
+	vertical-align:middle;
+
+	margin-left: 2px;
+
+	
+	
+}
+.summarypanel2
+{
+	width:90px;
+	height:40px;
+	line-height:40px;	
+	border:none;
+	text-align:center;
+	vertical-align: middle;
+	background-color:#A0A0A0;
+
+}
+
+.topboxleft
+ {
+
+            font-family: Calibri;
+            font-size: large;
+            text-align:justify;
+            padding-right:10px;
+ }
+
+.topboxright
+{
+
+}
+
+.summarypanelBonus
+{
+       width:90px;
+       height:40px;
+       line-height:40px;
+       text-align:center;
+       border:1px solid #445870;
+       background-color:Blue;
+       color:White;
+       font-weight:bold;
+		vertical-align:middle;
+}
+.summarypanelPenalty
+{
+       width:90px;
+       height:40px;
+       line-height:40px;
+       text-align:center;
+       border:1px solid #445870;
+       background-color:Red;   
+       color:White;
+       font-weight:bold;
+       vertical-align:middle;
+   
+        
+}
+
+.inputcell
+{
+	text-align: center;
+}
+
+
+.hover
+{
+	color:Black;
+}
